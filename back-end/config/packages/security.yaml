@@ -30,6 +30,7 @@ security:
                 check_path: login
                 username_path: security.credentials.login
                 password_path: security.credentials.password
+                provider: fos_userbundle
 
             # activate different ways to authenticate
 
@@ -44,9 +45,3 @@ security:
     access_control:
          - { path: ^/admin, roles: ROLE_ADMIN }
         # - { path: ^/profile, roles: ROLE_USER }
-
-services:
-    json_login.success_handler:
-        class: Symfony\Bundle\SecurityBundle\Tests\Functional\Bundle\JsonLoginBundle\Security\Http\JsonAuthenticationSuccessHandler
-    json_login.failure_handler:
-        class: Symfony\Bundle\SecurityBundle\Tests\Functional\Bundle\JsonLoginBundle\Security\Http\JsonAuthenticationFailureHandler
