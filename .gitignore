@@ -1,9 +1,9 @@
 
 ###> symfony/framework-bundle ###
 /.env
-/public/bundles/
-/var/
-/vendor/
+/back-end/public/bundles/
+/back-end/var/
+/back-end/vendor/
 ###< symfony/framework-bundle ###
 
 .idea
