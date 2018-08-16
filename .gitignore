@@ -1,9 +1,5 @@
-
-###> symfony/framework-bundle ###
-/.env
-/back-end/public/bundles/
-/back-end/var/
-/back-end/vendor/
-###< symfony/framework-bundle ###
-
-.idea
+# The best practice to add .idea and other temporary files and folders to .gitignore is to add them globally.
+# Example:
+# $ git config --global core.excludesfile ~/.gitignore
+# $ nano ~/.gitignore - add .idea folder to .gitignore globally
+# .idea
